@@ -25,7 +25,7 @@ export function SkillsSection({
         {Object.entries(skills).map(([category, skillList]) => (
           <Card
             key={category}
-            className="transform-gpu border-border/80 bg-secondary/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/10"
+            className="transform-gpu border-border/80 bg-secondary/10 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/10"
           >
             <CardHeader>
               <CardTitle className="font-headline text-xl text-accent-foreground">
@@ -38,7 +38,7 @@ export function SkillsSection({
                   <Badge
                     key={skill}
                     variant="outline"
-                    className="border-primary/50 bg-background/50 text-base text-foreground/90 transition-colors hover:bg-primary/10"
+                    className="border-primary/50 bg-background/50 text-base text-foreground/90 transition-all duration-200 hover:scale-110 hover:bg-primary/20 hover:text-primary-foreground"
                   >
                     {skill}
                   </Badge>
