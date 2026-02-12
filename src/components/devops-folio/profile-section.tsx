@@ -29,7 +29,7 @@ export function ProfileSection({ id, data }: ProfileSectionProps) {
         </Avatar>
       )}
       <div className="mt-6 md:mt-0">
-        <h1 className="font-headline text-4xl font-extrabold tracking-tight text-primary lg:text-5xl">
+        <h1 className="bg-gradient-to-r from-primary to-secondary bg-clip-text font-headline text-4xl font-extrabold tracking-tight text-transparent lg:text-5xl">
           {name}
         </h1>
         <h2 className="mt-2 font-headline text-2xl font-semibold text-foreground/90">

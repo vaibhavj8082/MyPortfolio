@@ -62,7 +62,7 @@ export function AiSkillSuggester({
           onClick={handleSuggestSkills}
           disabled={loading}
           size="lg"
-          className="group transition-transform hover:scale-105"
+          className="group bg-gradient-to-r from-primary to-secondary text-primary-foreground transition-transform hover:scale-105"
         >
           {loading ? (
             <Loader2 className="mr-2 h-5 w-5 animate-spin" />

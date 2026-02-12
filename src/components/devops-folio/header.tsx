@@ -81,7 +81,7 @@ export function Header({ sections }: HeaderProps) {
       <div className="container mx-auto flex h-16 max-w-5xl items-center justify-between px-4">
         <Link href="#profile" className="flex items-center gap-2">
           <Code2 className="h-7 w-7 text-primary" />
-          <span className="font-headline text-xl font-bold">DevOps Folio</span>
+          <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text font-headline text-xl font-bold text-transparent">DevOps Folio</span>
         </Link>
         <nav className="hidden md:flex md:items-center md:gap-2">
           {sections.map((section) => (
