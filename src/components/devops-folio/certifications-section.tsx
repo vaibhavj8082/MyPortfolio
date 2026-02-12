@@ -14,7 +14,7 @@ export function CertificationsSection({
 }: CertificationsSectionProps) {
   return (
     <section id={id} className="scroll-mt-20">
-      <h2 className="text-center font-headline text-3xl font-bold text-primary">
+      <h2 className="font-headline text-3xl font-bold text-primary">
         Certifications
       </h2>
       <div className="mt-8 grid gap-6 md:grid-cols-2">

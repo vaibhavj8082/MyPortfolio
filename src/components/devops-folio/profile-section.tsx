@@ -13,9 +13,9 @@ type ProfileSectionProps = {
 export function ProfileSection({ id, data }: ProfileSectionProps) {
   const { name, title, summary, profilePicture, contact } = data;
   return (
-    <section id={id} className="flex flex-col items-center text-center md:flex-row md:text-left">
+    <section id={id} className="scroll-mt-20 flex flex-col items-center text-center md:flex-row md:text-left">
       {profilePicture && (
-        <Avatar className="h-40 w-40 md:mr-10 md:h-48 md:w-48">
+        <Avatar className="h-40 w-40 flex-shrink-0 md:mr-10 md:h-48 md:w-48">
           <Image
             src={profilePicture.imageUrl}
             alt={name}

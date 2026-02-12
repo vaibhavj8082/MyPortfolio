@@ -18,14 +18,14 @@ type ProjectsSectionProps = {
 export function ProjectsSection({ id, projects }: ProjectsSectionProps) {
   return (
     <section id={id} className="scroll-mt-20">
-      <h2 className="text-center font-headline text-3xl font-bold text-primary">
+      <h2 className="font-headline text-3xl font-bold text-primary">
         Projects Portfolio
       </h2>
       <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
         {projects.map((project, index) => (
           <Card
             key={index}
-            className="flex transform-gpu flex-col overflow-hidden bg-secondary/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-primary/10"
+            className="group flex transform-gpu flex-col overflow-hidden bg-secondary/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-primary/10"
           >
             {project.image && (
               <div className="aspect-video overflow-hidden">

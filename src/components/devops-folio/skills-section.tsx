@@ -18,7 +18,7 @@ export function SkillsSection({
 }: SkillsSectionProps) {
   return (
     <section id={id} className="scroll-mt-20">
-      <h2 className="text-center font-headline text-3xl font-bold text-primary">
+      <h2 className="font-headline text-3xl font-bold text-primary">
         Technical Skills
       </h2>
       <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">

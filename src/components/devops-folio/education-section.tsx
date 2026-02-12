@@ -9,7 +9,7 @@ type EducationSectionProps = {
 export function EducationSection({ id, education }: EducationSectionProps) {
   return (
     <section id={id} className="scroll-mt-20">
-      <h2 className="text-center font-headline text-3xl font-bold text-primary">
+      <h2 className="font-headline text-3xl font-bold text-primary">
         Educational Background
       </h2>
       <div className="mt-8 space-y-6">
