@@ -3,8 +3,8 @@
     {
       "id": "profile",
       "description": "A professional headshot of a person.",
-      "imageUrl": "https://images.unsplash.com/photo-1595211877493-41a4e5f236b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxwcm9mZXNzaW9uYWwlMjBoZWFkc2hvdHxlbnwwfHx8fDE3NzA4MDY2OTl8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "professional headshot"
+      "imageUrl": "https://images.unsplash.com/photo-1615813975544-ccb9bb5351b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwcm9mZXNzaW9uYWwlMjBpbmRpYW4lMjBtYW58ZW58MHx8fHwxNzE5NDI1MzA5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "professional man"
     },
     {
       "id": "project1",

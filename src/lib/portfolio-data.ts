@@ -18,14 +18,14 @@ export const profileData = {
 };
 
 export const skillsData = {
+  "Linux": ["RHEL", "Ubuntu", "NFS", "SELinux", "Storage Management", "User Management", "Permission Management", "Bash Scripting"],
+  "Containers": ["Docker", "Dockerfile", "Docker Compose", "Image Registry"],
   "Cloud Platforms": ["AWS", "Azure", "GCP"],
   "DevOps & CI/CD": ["Jenkins", "GitHub Actions"],
   "Infrastructure & IaC": ["Terraform", "Ansible", "CloudFormation"],
-  "Containers": ["Docker", "Dockerfile", "Docker Compose", "Image Registry"],
   "Kubernetes": ["Pods", "Deployments", "Services", "Namespaces", "Network Policies"],
-  "Linux": ["RHEL", "Ubuntu", "NFS", "SELinux", "Storage Management", "User Management", "Permission Management", "Bash Scripting"],
-  "Automation & Scripting": ["Python", "Go", "PowerShell"],
   "Networking": ["VPC", "DNS", "Load Balancing", "Firewalls"],
+  "Automation & Scripting": ["Python", "Go", "PowerShell"],
 };
 
 export const projectsData = [
@@ -63,7 +63,7 @@ export const experienceData = [
   {
     role: "Technical Support Intern",
     company: "Global IT Providers",
-    period: "Jan 2024 - Jul 2024",
+    period: "Jan 2025 - Jul 2025",
     achievements: [
       "Resolved customer tickets and technical issues through the WHMCS portal.",
       "Created and maintained technical documentation for common tasks and solutions.",
@@ -76,21 +76,21 @@ export const experienceData = [
 
 export const certificationsData = [
   {
-    name: "AWS Certified DevOps Engineer - Professional",
-    date: "Issued: June 2021",
-    id: "Credential ID: XYZ123ABC",
+    name: "Red Hat Certified System Administrator - RHCSA",
+    date: "Issued: 28 July 2025",
+    id: "Credential ID: 250-086-337",
     url: "#"
   },
   {
-    name: "Certified Kubernetes Administrator (CKA)",
-    date: "Issued: March 2020",
-    id: "Credential ID: CKA-20-LFW12345",
+    name: "Red Hat Certified Specialist in Containers - EX188",
+    date: "Issued: 16 June 2025",
+    id: "Credential ID: 250-086-337",
     url: "#"
   },
   {
-    name: "HashiCorp Certified: Terraform Associate",
-    date: "Issued: August 2019",
-    id: "Credential ID: HCTA-9876",
+    name: "Certified Linux Administrator-CLA Exam",
+    date: "Issued: 14 August 2025",
+    id: "Credential ID: CHWZV6VUH0U",
     url: "#"
   },
 ];
