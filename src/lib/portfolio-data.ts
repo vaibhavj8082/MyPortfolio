@@ -109,12 +109,3 @@ export const educationData = [
     details: "Percentage: 85.47%",
   },
 ];
-
-export const experienceDescriptionForAI = experienceData
-  .map(
-    (exp) =>
-      `Role: ${exp.role} at ${exp.company} (${exp.period}). Achievements: ${exp.achievements.join(". ")}`
-  )
-  .join("\n");
-
-export const existingSkillsForAI = Object.values(skillsData).flat();
