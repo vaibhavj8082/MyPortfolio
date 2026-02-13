@@ -9,7 +9,12 @@ export const profileData = {
   title: "Aspiring DevOps & Cloud Engineer",
   summary:
     "A motivated and enthusiastic fresher with a solid foundation in computer science and engineering. Eager to launch a career in DevOps, Cloud Engineering, or Linux Administration. Passionate about automation, cloud technologies, and solving complex problems.",
-  profilePicture: findImage("profile"),
+  profilePicture: {
+    id: "profile",
+    description: "A professional headshot of Vaibhav Jadhav.",
+    imageUrl: "/profile.png",
+    imageHint: "professional man"
+  },
   contact: {
     email: "vaibhavj7326@gmail.com",
     phone: "+91 9307187326",
