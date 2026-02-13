@@ -1,5 +1,5 @@
 import type { profileData as ProfileDataType } from "@/lib/portfolio-data";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Avatar } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
@@ -18,7 +18,7 @@ export function ProfileSection({ id, data }: ProfileSectionProps) {
       className="scroll-mt-20 flex flex-col items-center gap-y-8 text-center md:flex-row md:gap-x-12 md:text-left"
     >
       {profilePicture && (
-        <Avatar className="h-40 w-40 flex-shrink-0 md:h-48 md:w-48">
+        <Avatar className="h-40 w-40 flex-shrink-0 border-4 border-primary/20 md:h-48 md:w-48">
           <Image
             src={profilePicture.imageUrl}
             alt={name}
@@ -28,7 +28,6 @@ export function ProfileSection({ id, data }: ProfileSectionProps) {
             className="h-full w-full object-cover"
             data-ai-hint={profilePicture.imageHint}
           />
-          <AvatarFallback>{name.charAt(0)}</AvatarFallback>
         </Avatar>
       )}
       <div>
@@ -44,7 +43,7 @@ export function ProfileSection({ id, data }: ProfileSectionProps) {
             asChild
             variant="ghost"
             size="icon"
-            className="text-foreground/80 hover:text-primary"
+            className="text-foreground/80 transition-colors hover:text-primary"
           >
             <Link href={`mailto:${contact.email}`} aria-label="Email">
               <Mail />
@@ -54,7 +53,7 @@ export function ProfileSection({ id, data }: ProfileSectionProps) {
             asChild
             variant="ghost"
             size="icon"
-            className="text-foreground/80 hover:text-primary"
+            className="text-foreground/80 transition-colors hover:text-primary"
           >
             <Link href={`tel:${contact.phone}`} aria-label="Phone">
               <Phone />
@@ -64,7 +63,7 @@ export function ProfileSection({ id, data }: ProfileSectionProps) {
             asChild
             variant="ghost"
             size="icon"
-            className="text-foreground/80 hover:text-primary"
+            className="text-foreground/80 transition-colors hover:text-primary"
           >
             <Link
               href={contact.linkedin}
