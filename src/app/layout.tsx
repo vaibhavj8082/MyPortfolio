@@ -3,8 +3,9 @@ import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: "DevOps Folio",
-  description: "A professional portfolio for a DevOps engineer.",
+  title: "Vaibhav Jadhav - DevOps & Cloud Engineer",
+  description:
+    "The professional portfolio of Vaibhav Jadhav, an aspiring DevOps and Cloud Engineer.",
 };
 
 export default function RootLayout({

@@ -21,7 +21,7 @@ export function CertificationsSection({
         {certifications.map((cert, index) => (
           <div
             key={index}
-            className="flex flex-col justify-between rounded-lg border border-border bg-card p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-primary/15"
+            className="flex flex-col justify-between rounded-lg border border-border bg-card p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/15"
           >
             <div className="flex items-start gap-4">
               <div className="mt-1 flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-primary/10">
@@ -36,8 +36,17 @@ export function CertificationsSection({
               </div>
             </div>
             <div className="mt-4 flex justify-end">
-               <Button asChild variant="outline" size="sm" disabled={!cert.url || cert.url === '#'}>
-                <Link href={cert.url || '#'} target="_blank" rel="noopener noreferrer">
+              <Button
+                asChild
+                variant="outline"
+                size="sm"
+                disabled={!cert.url || cert.url === "#"}
+              >
+                <Link
+                  href={cert.url || "#"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   View Certificate
                   <ExternalLink className="ml-2 h-4 w-4" />
                 </Link>

@@ -17,7 +17,7 @@ export function SkillsSection({ id, skills }: SkillsSectionProps) {
         {Object.entries(skills).map(([category, skillList]) => (
           <Card
             key={category}
-            className="transform-gpu rounded-xl border-border/20 bg-secondary/30 text-left shadow-lg shadow-background/20 transition-all duration-300 hover:-translate-y-2 hover:border-primary/50 hover:shadow-2xl hover:shadow-primary/10"
+            className="transform-gpu rounded-xl bg-card text-left transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/15"
           >
             <CardHeader>
               <CardTitle className="font-headline text-2xl text-accent-foreground">
