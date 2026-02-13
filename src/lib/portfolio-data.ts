@@ -116,13 +116,13 @@ export const educationData = [
   {
     degree: "B.Tech in Computer Science and Engineering",
     institution: "G.S Mandals Marathwada Institute of Technology, Aurangabad",
-    period: "2021 - 2024",
+    period: "2022 - 2025",
     details: "CGPA: 7.61/10",
   },
   {
     degree: "Diploma in Computer Engineering",
     institution: "MGM Polytechnic College, Aurangabad",
-    period: "2018 - 2021",
+    period: "2019 - 2022",
     details: "Percentage: 85.47%",
   },
 ];
