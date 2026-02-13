@@ -30,31 +30,43 @@ export const skillsData = {
 
 export const projectsData = [
   {
-    image: findImage("project1"),
     title: "Containerized Website on AWS",
-    description:
-      "Deployed a containerized static website on an AWS EC2 instance using Docker. This project involved creating a Dockerfile, building a custom Nginx image, and running the container on AWS.",
+    description: "Deployed a containerized static website on an AWS EC2 instance using Docker to ensure portability and consistency.",
+    details: [
+        "Authored a Dockerfile to create a custom Nginx image serving static web content.",
+        "Built the Docker image and ran it as a container on an AWS EC2 instance.",
+        "Configured networking and port mappings to make the website accessible to the public."
+    ],
     technologies: ["Docker", "AWS EC2", "Nginx"],
   },
   {
-    image: findImage("project2"),
     title: "Dockerized Web App with CI/CD",
-    description:
-      "Developed a CI/CD pipeline using Jenkins to automatically build and deploy a simple Python Flask web application. The pipeline triggers on code changes, builds a Docker image, and pushes it to Docker Hub.",
+    description: "Developed a CI/CD pipeline using Jenkins to automate the build and deployment of a Python Flask web application.",
+    details: [
+        "Set up a Jenkins pipeline that triggers automatically on code pushes to a GitHub repository.",
+        "The pipeline builds a Docker image of the Flask application and pushes it to Docker Hub.",
+        "Automated the process of testing and deploying new versions, reducing manual intervention."
+    ],
     technologies: ["Docker", "Jenkins", "Python", "Flask", "GitHub"],
   },
   {
-    image: findImage("project3"),
     title: "Kubernetes 3-Tier App Security",
-    description:
-      "Implemented Kubernetes Network Policies to secure a 3-tier application (frontend, backend, database). This project demonstrates isolating pods and controlling traffic flow between different components within a cluster.",
+    description: "Secured a 3-tier application (frontend, backend, database) on Kubernetes by implementing Network Policies.",
+    details: [
+        "Defined Network Policies using YAML to control traffic flow between application tiers.",
+        "Isolated pods to ensure that components could only communicate with designated services.",
+        "Enhanced cluster security by enforcing the principle of least privilege for network connections."
+    ],
     technologies: ["Kubernetes", "Network Policies", "YAML"],
   },
   {
-    image: findImage("project1"),
     title: "Automated Docker Deployment with Bash",
-    description:
-      "Wrote a Bash script to automate the deployment of a Dockerized application. The script pulls the latest image, stops and removes the old container, and starts a new one with the updated image.",
+    description: "Wrote a Bash script to fully automate the deployment and update process of a Dockerized application.",
+    details: [
+        "The script automatically pulls the latest Docker image from a registry.",
+        "Gracefully stops and removes the old container to prevent conflicts.",
+        "Starts a new container with the updated image, ensuring zero-downtime deployment where possible."
+    ],
     technologies: ["Bash Scripting", "Docker", "Automation"],
   },
 ];

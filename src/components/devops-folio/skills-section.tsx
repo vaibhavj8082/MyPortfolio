@@ -30,7 +30,7 @@ export function SkillsSection({ id, skills }: SkillsSectionProps) {
                   <Badge
                     key={skill}
                     variant="outline"
-                    className="border-primary/30 bg-background/70 px-4 py-2 text-base font-medium text-foreground/90 transition-all duration-200 hover:scale-105 hover:bg-primary/20 hover:text-primary-foreground"
+                    className="border-primary/30 bg-background/70 px-4 py-2 text-base font-medium text-foreground/90 transition-all duration-200 hover:scale-105 hover:border-primary hover:bg-primary hover:text-primary-foreground"
                   >
                     {skill}
                   </Badge>

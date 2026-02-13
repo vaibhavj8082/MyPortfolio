@@ -1,7 +1,5 @@
 import type { profileData } from "@/lib/portfolio-data";
 import { Linkedin, Mail, Phone, ArrowRight } from "lucide-react";
-import Link from "next/link";
-import { Button } from "@/components/ui/button";
 
 type ContactSectionProps = {
   id: string;
@@ -11,25 +9,22 @@ type ContactSectionProps = {
 export function ContactSection({ id, contact }: ContactSectionProps) {
   const contactMethods = [
     {
-      icon: <Mail className="h-8 w-8 text-primary" />,
+      icon: <Mail className="h-7 w-7 text-primary" />,
       title: "Email",
       value: contact.email,
       href: `mailto:${contact.email}`,
-      cta: "Send an Email",
     },
     {
-      icon: <Phone className="h-8 w-8 text-primary" />,
+      icon: <Phone className="h-7 w-7 text-primary" />,
       title: "Phone",
       value: contact.phone,
       href: `tel:${contact.phone}`,
-      cta: "Call Me",
     },
     {
-      icon: <Linkedin className="h-8 w-8 text-primary" />,
+      icon: <Linkedin className="h-7 w-7 text-primary" />,
       title: "LinkedIn",
       value: "Vaibhav Jadhav",
       href: contact.linkedin,
-      cta: "Connect on LinkedIn",
     },
   ];
 
@@ -42,35 +37,28 @@ export function ContactSection({ id, contact }: ContactSectionProps) {
         I'm always open to discussing new projects, creative ideas, or
         opportunities to be part of an amazing team. Feel free to reach out.
       </p>
-      <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-3">
+      <div className="mx-auto mt-12 max-w-lg space-y-6">
         {contactMethods.map((method) => (
-          <div
+          <a
             key={method.title}
-            className="group relative flex transform-gpu flex-col items-center justify-center rounded-xl border border-border/20 bg-card p-8 text-center transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/15"
+            href={method.href}
+            target={method.href.startsWith("http") ? "_blank" : "_self"}
+            rel={method.href.startsWith("http") ? "noopener noreferrer" : ""}
+            className="group flex items-center gap-6 rounded-xl border border-border/20 bg-card p-4 transition-all duration-300 hover:-translate-y-1 hover:border-primary/40 hover:shadow-lg hover:shadow-primary/10"
           >
-            <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-primary/5 via-secondary/5 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
-            <div className="relative">
-                <div className="inline-block rounded-full bg-background p-5">
-                    {method.icon}
-                </div>
-                <h3 className="mt-6 font-headline text-2xl font-semibold text-accent-foreground">
-                {method.title}
-                </h3>
-                <p className="mt-2 text-lg text-foreground/80">
-                {method.value}
-                </p>
-                <Button asChild variant="link" className="mt-4 text-lg text-primary">
-                    <Link
-                        href={method.href}
-                        target={method.href.startsWith("http") ? "_blank" : "_self"}
-                        rel={method.href.startsWith("http") ? "noopener noreferrer" : ""}
-                    >
-                        {method.cta}
-                        <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
-                    </Link>
-                </Button>
+            <div className="rounded-lg bg-background p-3 transition-colors duration-300 group-hover:bg-primary/10">
+              {method.icon}
             </div>
-          </div>
+            <div className="flex-grow">
+              <h3 className="font-headline text-xl font-semibold text-accent-foreground">
+                {method.title}
+              </h3>
+              <p className="text-foreground/80 transition-colors duration-300 group-hover:text-primary">
+                {method.value}
+              </p>
+            </div>
+            <ArrowRight className="h-6 w-6 text-foreground/40 transition-all duration-300 group-hover:translate-x-1 group-hover:text-primary" />
+          </a>
         ))}
       </div>
     </section>
