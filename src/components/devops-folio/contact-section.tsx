@@ -1,6 +1,7 @@
 import type { profileData } from "@/lib/portfolio-data";
-import { Linkedin, Mail, Phone } from "lucide-react";
+import { Linkedin, Mail, Phone, ArrowRight } from "lucide-react";
 import Link from "next/link";
+import { Button } from "@/components/ui/button";
 
 type ContactSectionProps = {
   id: string;
@@ -14,18 +15,21 @@ export function ContactSection({ id, contact }: ContactSectionProps) {
       title: "Email",
       value: contact.email,
       href: `mailto:${contact.email}`,
+      cta: "Send an Email",
     },
     {
       icon: <Phone className="h-8 w-8 text-primary" />,
       title: "Phone",
       value: contact.phone,
       href: `tel:${contact.phone}`,
+      cta: "Call Me",
     },
     {
       icon: <Linkedin className="h-8 w-8 text-primary" />,
       title: "LinkedIn",
-      value: "View Profile",
+      value: "Vaibhav Jadhav",
       href: contact.linkedin,
+      cta: "Connect on LinkedIn",
     },
   ];
 
@@ -40,25 +44,33 @@ export function ContactSection({ id, contact }: ContactSectionProps) {
       </p>
       <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-3">
         {contactMethods.map((method) => (
-          <Link
+          <div
             key={method.title}
-            href={method.href}
-            target={method.href.startsWith("http") ? "_blank" : undefined}
-            rel={
-              method.href.startsWith("http") ? "noopener noreferrer" : undefined
-            }
-            className="group block rounded-xl border border-border/20 bg-secondary/30 p-6 text-center transition-all duration-300 hover:-translate-y-2 hover:border-primary/50 hover:bg-secondary/60 hover:shadow-2xl hover:shadow-primary/10"
+            className="group relative flex transform-gpu flex-col items-center justify-center rounded-xl border border-border/20 bg-card p-8 text-center transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/15"
           >
-            <div className="inline-block rounded-full bg-background p-4">
-              {method.icon}
+            <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-primary/5 via-secondary/5 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
+            <div className="relative">
+                <div className="inline-block rounded-full bg-background p-5">
+                    {method.icon}
+                </div>
+                <h3 className="mt-6 font-headline text-2xl font-semibold text-accent-foreground">
+                {method.title}
+                </h3>
+                <p className="mt-2 text-lg text-foreground/80">
+                {method.value}
+                </p>
+                <Button asChild variant="link" className="mt-4 text-lg text-primary">
+                    <Link
+                        href={method.href}
+                        target={method.href.startsWith("http") ? "_blank" : "_self"}
+                        rel={method.href.startsWith("http") ? "noopener noreferrer" : ""}
+                    >
+                        {method.cta}
+                        <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
+                    </Link>
+                </Button>
             </div>
-            <h3 className="mt-4 font-headline text-xl font-semibold text-accent-foreground">
-              {method.title}
-            </h3>
-            <p className="mt-1 text-foreground/80 transition-colors duration-300 group-hover:text-primary">
-              {method.value}
-            </p>
-          </Link>
+          </div>
         ))}
       </div>
     </section>

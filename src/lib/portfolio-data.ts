@@ -13,7 +13,7 @@ export const profileData = {
   contact: {
     email: "vaibhavj7326@gmail.com",
     phone: "+91 9307187326",
-    linkedin: "https://linkedin.com/in/vaibhav-jadhav",
+    linkedin: "https://www.linkedin.com/in/vaibhav-jadhav-8715b2217/",
   },
 };
 
