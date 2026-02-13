@@ -91,19 +91,19 @@ export const certificationsData = [
     name: "Red Hat Certified System Administrator - RHCSA",
     date: "Issued: 28 July 2025",
     id: "Credential ID: 250-086-337",
-    url: "#"
+    url: "https://www.credly.com/badges/f8d7e005-b9ac-476f-aa06-0b502dee2c97/public_url"
   },
   {
     name: "Red Hat Certified Specialist in Containers - EX188",
     date: "Issued: 16 June 2025",
     id: "Credential ID: 250-086-337",
-    url: "#"
+    url: "https://www.credly.com/badges/75515833-48a9-44ff-9e76-327c66e00fec/public_url"
   },
   {
     name: "Certified Linux Administrator-CLA Exam",
     date: "Issued: 14 August 2025",
     id: "Credential ID: CHWZV6VUH0U",
-    url: "#"
+    url: "https://drive.google.com/file/d/1RO-UIZdZQC4HYHBn5ar4gFR2aunndzo8/view"
   },
 ];
 
