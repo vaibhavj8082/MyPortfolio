@@ -12,7 +12,7 @@ export const profileData = {
   profilePicture: {
     id: "profile",
     description: "A professional headshot of Vaibhav Jadhav.",
-    imageUrl: "/profile.png",
+    imageUrl: "/photo1.png",
     imageHint: "professional man"
   },
   contact: {
