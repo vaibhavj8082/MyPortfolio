@@ -1,3 +1,4 @@
+import { Header } from "@/components/devops-folio/header";
 import { ProfileSection } from "@/components/devops-folio/profile-section";
 import { SkillsSection } from "@/components/devops-folio/skills-section";
 import { ExperienceSection } from "@/components/devops-folio/experience-section";
@@ -14,22 +15,22 @@ import {
   experienceDescriptionForAI,
   existingSkillsForAI,
 } from "@/lib/portfolio-data";
-import { FolioSidebar } from "@/components/devops-folio/folio-sidebar";
 
 export default function Home() {
   const sections = [
-    { id: "profile", title: "Profile", icon: "User" },
-    { id: "skills", title: "Skills", icon: "Code2" },
-    { id: "experience", title: "Experience", icon: "Briefcase" },
-    { id: "projects", title: "Projects", icon: "FolderKanban" },
-    { id: "certifications", title: "Certifications", icon: "Award" },
-    { id: "education", title: "Education", icon: "GraduationCap" },
+    { id: "profile", title: "Profile" },
+    { id: "skills", title: "Skills" },
+    { id: "experience", title: "Experience" },
+    { id: "projects", title: "Projects" },
+    { id: "certifications", title: "Certifications" },
+    { id: "education", title: "Education" },
   ];
 
   return (
-    <FolioSidebar sections={sections} profile={profileData}>
-      <main className="flex-1 p-6 sm:p-8 md:p-12">
-        <div className="mx-auto max-w-5xl space-y-20">
+    <div className="flex min-h-screen flex-col bg-background">
+      <Header sections={sections} />
+      <main className="container flex-1 py-16">
+        <div className="space-y-20">
           <ProfileSection id="profile" data={profileData} />
           <SkillsSection
             id="skills"
@@ -52,6 +53,6 @@ export default function Home() {
           Reserved.
         </p>
       </footer>
-    </FolioSidebar>
+    </div>
   );
 }
