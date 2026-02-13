@@ -29,8 +29,8 @@ export default function Home() {
   return (
     <div className="flex min-h-screen flex-col bg-background">
       <Header sections={sections} />
-      <main className="container flex-1 py-16">
-        <div className="space-y-20">
+      <main className="container mx-auto w-full max-w-7xl flex-1 px-4 py-24 sm:px-6 lg:px-8">
+        <div className="space-y-28">
           <ProfileSection id="profile" data={profileData} />
           <SkillsSection
             id="skills"

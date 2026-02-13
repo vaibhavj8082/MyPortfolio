@@ -25,7 +25,7 @@ export function ProjectsSection({ id, projects }: ProjectsSectionProps) {
         {projects.map((project, index) => (
           <Card
             key={index}
-            className="group flex transform-gpu flex-col overflow-hidden bg-secondary/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-primary/10"
+            className="group flex transform-gpu flex-col overflow-hidden bg-card transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/15"
           >
             {project.image && (
               <div className="aspect-video overflow-hidden">

@@ -78,7 +78,7 @@ export function Header({ sections }: HeaderProps) {
           : "bg-transparent"
       )}
     >
-      <div className="container mx-auto flex h-16 max-w-5xl items-center justify-between px-4">
+      <div className="container mx-auto flex h-16 max-w-7xl items-center justify-between px-4">
         <Link href="#profile" className="flex items-center gap-2">
           <Code2 className="h-7 w-7 text-primary" />
           <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text font-headline text-xl font-bold text-transparent">DevOps Folio</span>

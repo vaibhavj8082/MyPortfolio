@@ -80,10 +80,10 @@ export function AiSkillSuggester({
       )}
 
       {suggestedSkills.length > 0 && (
-        <Card className="mt-6 border-primary/50 bg-secondary/50 text-left">
+        <Card className="mt-8 rounded-xl border border-primary/30 bg-accent text-left shadow-lg shadow-primary/10">
           <CardHeader>
             <CardTitle className="flex items-center gap-2 font-headline text-xl text-accent-foreground">
-              <Sparkles className="h-5 w-5" />
+              <Sparkles className="h-5 w-5 text-primary" />
               Recommended Skills to Learn
             </CardTitle>
             <CardDescription>

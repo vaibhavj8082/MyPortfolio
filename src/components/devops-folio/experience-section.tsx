@@ -12,11 +12,11 @@ export function ExperienceSection({ id, experience }: ExperienceSectionProps) {
       <h2 className="font-headline text-3xl font-bold text-primary">
         Professional Experience
       </h2>
-      <div className="mt-8 space-y-12">
+      <div className="mt-12 space-y-16">
         {experience.map((job, index) => (
           <div
             key={index}
-            className="rounded-lg border border-border bg-card p-6 shadow-sm transition-shadow hover:shadow-lg hover:shadow-primary/10"
+            className="rounded-lg border border-border bg-card p-8 shadow-sm transition-shadow duration-300 hover:shadow-xl hover:shadow-primary/15"
           >
             <div className="flex items-start gap-4">
               <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-primary/10">
@@ -32,10 +32,10 @@ export function ExperienceSection({ id, experience }: ExperienceSectionProps) {
                 </p>
               </div>
             </div>
-            <ul className="mt-6 space-y-3 pl-4">
+            <ul className="mt-6 space-y-4 pl-4">
               {job.achievements.map((achievement, i) => (
-                <li key={i} className="flex items-start gap-3">
-                  <CheckCircle2 className="mt-1 h-4 w-4 flex-shrink-0 text-primary" />
+                <li key={i} className="flex items-start gap-4">
+                  <CheckCircle2 className="mt-1 h-5 w-5 flex-shrink-0 text-primary" />
                   <span className="text-foreground/80">{achievement}</span>
                 </li>
               ))}

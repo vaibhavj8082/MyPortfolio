@@ -13,9 +13,9 @@ type ProfileSectionProps = {
 export function ProfileSection({ id, data }: ProfileSectionProps) {
   const { name, title, summary, profilePicture, contact } = data;
   return (
-    <section id={id} className="scroll-mt-20 flex flex-col items-center text-center md:flex-row md:text-left">
+    <section id={id} className="scroll-mt-20 flex flex-col items-center gap-y-8 text-center md:flex-row md:gap-x-12 md:text-left">
       {profilePicture && (
-        <Avatar className="h-40 w-40 flex-shrink-0 md:mr-10 md:h-48 md:w-48">
+        <Avatar className="h-40 w-40 flex-shrink-0 md:h-48 md:w-48">
           <Image
             src={profilePicture.imageUrl}
             alt={name}
@@ -28,8 +28,8 @@ export function ProfileSection({ id, data }: ProfileSectionProps) {
           <AvatarFallback>{name.charAt(0)}</AvatarFallback>
         </Avatar>
       )}
-      <div className="mt-6 md:mt-0">
-        <h1 className="bg-gradient-to-r from-primary to-secondary bg-clip-text font-headline text-4xl font-extrabold tracking-tight text-transparent lg:text-5xl">
+      <div>
+        <h1 className="bg-gradient-to-r from-primary to-secondary bg-clip-text font-headline text-5xl font-extrabold tracking-tight text-transparent lg:text-6xl">
           {name}
         </h1>
         <h2 className="mt-2 font-headline text-2xl font-semibold text-foreground/90">

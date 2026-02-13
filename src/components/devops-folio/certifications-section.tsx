@@ -21,7 +21,7 @@ export function CertificationsSection({
         {certifications.map((cert, index) => (
           <div
             key={index}
-            className="flex flex-col justify-between rounded-lg border border-border bg-card p-4 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/10"
+            className="flex flex-col justify-between rounded-lg border border-border bg-card p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-primary/15"
           >
             <div className="flex items-start gap-4">
               <div className="mt-1 flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-primary/10">
